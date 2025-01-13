@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="arriere_plan">
+        <div class="container">
+            <div class="image">
+                <img src="./product-preview-card-component-main/images/image-product-mobile.jpg" alt="" class="image_mobile">
+                <img src="./product-preview-card-component-main/images/image-product-desktop.jpg" alt="" class="image_desktop">
+            </div>
+            <div class="description">
+               <div class="description_desktop">
+                <h3 class="espace_entre_lettre">Perfume</h3>
+                <h1>Gabrielle Essence Eau De Parfum</h1>
+                <p class="paragraphe"> A floral, solar and voluptuous interpretation composed by  Olivier Polge, 
+                Perfumer-Creator  for the House of CHANEL.</p>
+                <div class="prix">
+                    <div class="prix_promo">
+                        <p>$149.99</p>
+                    </div>
+                    <div class="prix_1">
+                        <p class="prix_barré">$169.99</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button id="achatDeProduit"><img src="./product-preview-card-component-main/images/icon-cart.svg" alt="">Add to cart</button>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        messageAchat = document.getElementById("achatDeProduit")
+        messageAchat.addEventListener("click", function() {
+            alert("Le produit a été ajouté au panier!")
+        })
+    </script>
+</body>
+</html>
